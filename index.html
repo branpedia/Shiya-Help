@@ -3,136 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiya MD Bot</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Shiya MD Bot - Multi-language WhatsApp Bot</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <div class="logo">Shiya MD</div>
         <ul>
-            <li><a href="#fitur">Fitur</a></li>
-            <li><a href="#cara">Cara Penggunaan</a></li>
-            <li><a href="#commands">Perintah</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#features" data-i18n="nav.features">Fitur</a></li>
+            <li><a href="#usage" data-i18n="nav.usage">Cara Penggunaan</a></li>
+            <li><a href="#commands" data-i18n="nav.commands">Perintah</a></li>
+            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Kontak</a></li>
         </ul>
     </nav>
-
+    <!-- Hero Section -->
     <div class="hero">
-        <h1>Selamat datang di Shiya MD Bot!</h1>
-        <p>Bot cerdas untuk mengelola grup dengan mudah dan efisien.</p>
+        <h1 data-i18n="hero.title">Selamat datang di Shiya MD Bot!</h1>
+        <p data-i18n="hero.subtitle">Bot cerdas untuk mengelola grup dengan mudah dan efisien.</p>
     </div>
-
     <div class="container">
-        <section id="fitur">
-            <h2>Fitur Utama</h2>
+        <!-- Features -->
+        <section id="features">
+            <h2 data-i18n="features.title">Fitur Utama</h2>
             <div class="features">
                 <div class="feature">
                     <i class="fas fa-users-cog"></i>
-                    <h3>Administrasi Grup</h3>
-                    <p>Fitur lengkap untuk mengelola grup secara otomatis</p>
+                    <h3 data-i18n="features.group">Administrasi Grup</h3>
+                    <p data-i18n="features.group_desc">Fitur lengkap untuk mengelola grup secara otomatis</p>
                 </div>
                 <div class="feature">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Anti-Toksik</h3>
-                    <p>Proteksi grup dari link, kata kasar, dan spam</p>
+                    <h3 data-i18n="features.antitoxic">Anti-Toksik</h3>
+                    <p data-i18n="features.antitoxic_desc">Proteksi grup dari link, kata kasar, dan spam</p>
                 </div>
                 <div class="feature">
                     <i class="fas fa-folder-open"></i>
-                    <h3>Downloader Video</h3>
-                    <p>Download video dari berbagai platform</p>
+                    <h3 data-i18n="features.downloader">Downloader Video</h3>
+                    <p data-i18n="features.downloader_desc">Download video dari berbagai platform</p>
                 </div>
                 <div class="feature">
                     <i class="fas fa-chart-line"></i>
-                    <h3>Store</h3>
-                    <p>Sistem toko digital dalam bot</p>
+                    <h3 data-i18n="features.store">Store</h3>
+                    <p data-i18n="features.store_desc">Sistem toko digital dalam bot</p>
                 </div>
             </div>
         </section>
-
-        <section id="cara">
-            <h2>Cara Penggunaan</h2>
+        <!-- Usage -->
+        <section id="usage">
+            <h2 data-i18n="usage.title">Cara Penggunaan</h2>
             <div class="command-list">
-                <p>1. Silakan Mendaftar Terlebih Dulu Dengan Cara <code>.daftar</code></p>
-                <p>2. Berikan akses admin kepada bot.</p>
-                <p>3. Gunakan perintah seperti <code>.menu</code> untuk melihat daftar fitur.</p>
+                <p><span data-i18n="usage.step1">1. Silakan Mendaftar Terlebih Dulu Dengan Cara</span> <code>.daftar</code></p>
+                <p data-i18n="usage.step2">2. Berikan akses admin kepada bot.</p>
+                <p><span data-i18n="usage.step3">3. Gunakan perintah seperti</span> <code>.menu</code> <span data-i18n="usage.step3_cont">untuk melihat daftar fitur.</span></p>
             </div>
         </section>
-
+        <!-- Commands -->
         <section id="commands">
-            <h2>Daftar Perintah</h2>
+            <h2 data-i18n="commands.title">Daftar Perintah</h2>
             <div class="command-list">
-                <h3>Fitur Administrasi Grup</h3>
+                <h3 data-i18n="commands.group">Fitur Administrasi Grup</h3>
                 <div class="command-item">
                     <div class="command">.on antilink</div>
-                    <p>Aktifkan fitur anti-link di grup. Bot akan otomatis menghapus pesan yang mengandung link dan bisa mengeluarkan member yang mengirim link.</p>
+                    <p data-i18n="commands.antilink_desc">Aktifkan fitur anti-link di grup. Bot akan otomatis menghapus pesan yang mengandung link dan bisa mengeluarkan member yang mengirim link.</p>
                 </div>
                 <div class="command-item">
-                    <div class="command">.off antilink</div>
-                    <p>Nonaktifkan fitur anti-link di grup.</p>
+                    <div class="command">.antilink off</div>
+                    <p data-i18n="commands.antilink_off_desc">Nonaktifkan fitur anti-link di grup.</p>
                 </div>
                 <div class="command-item">
-                    <div class="command">.on antilink [mode]</div>
-                    <p>Mode bisa berupa <code>delete</code> (hanya hapus pesan) atau <code>kick</code> (hapus dan keluarkan member). Contoh: <code>.on antilink kick</code></p>
+                    <div class="command">.antilink [mode]</div>
+                    <p><span data-i18n="commands.antilink_mode_desc">Mode bisa berupa</span> <code>delete</code> <span data-i18n="commands.antilink_mode_desc1">(hanya hapus pesan) atau</span> <code>kick</code> <span data-i18n="commands.antilink_mode_desc2">(hapus dan keluarkan member). Contoh:</span> <code>.antilink kick</code></p>
                 </div>
-
-                <h3>Fitur Anti-Toksik</h3>
+                <h3 data-i18n="commands.antitoxic">Fitur Anti-Toksik</h3>
                 <div class="command-item">
                     <div class="command">.on antibadword</div>
-                    <p>Aktifkan fitur anti-kata kasar. Bot akan menghapus pesan yang mengandung kata-kata terlarang.</p>
+                    <p data-i18n="commands.antibadword_desc">Aktifkan fitur anti-kata kasar. Bot akan menghapus pesan yang mengandung kata-kata terlarang.</p>
                 </div>
                 <div class="command-item">
                     <div class="command">.addbadword [kata]</div>
-                    <p>Tambahkan kata ke daftar kata terlarang. Contoh: <code>.addbadword anjing</code></p>
+                    <p><span data-i18n="commands.addbadword_desc">Tambahkan kata ke daftar kata terlarang. Contoh:</span> <code>.addbadword anjing</code></p>
                 </div>
-
-                <h3>Fitur Downloader</h3>
+                <h3 data-i18n="commands.downloader">Fitur Downloader</h3>
                 <div class="command-item">
                     <div class="command">.ytdl [url]</div>
-                    <p>Download video dari YouTube. Contoh: <code>.ytdl https://youtube.com/xxxx</code></p>
+                    <p><span data-i18n="commands.ytdl_desc">Download video dari YouTube. Contoh:</span> <code>.ytdl https://youtube.com/xxxx</code></p>
                 </div>
-
-                <h3>Fitur Store</h3>
+                <h3 data-i18n="commands.store">Fitur Store</h3>
                 <div class="command-item">
-                    <div class="command">.listproduk</div>
-                    <p>Lihat daftar produk yang tersedia di store.</p>
+                    <div class="command">.liststore</div>
+                    <p data-i18n="commands.listproduk_desc">Lihat daftar produk yang tersedia di store.</p>
                 </div>
             </div>
         </section>
-
+        <!-- FAQ -->
         <section id="faq">
-            <h2>FAQ</h2>
+            <h2 data-i18n="faq.title">FAQ</h2>
             <div class="command-list">
                 <div class="faq-item">
-                    <strong>Q: Bagaimana cara menambahkan bot ke grup?</strong>
-                    <p>A: Silakan Kamu Chat Owner Untuk Sewa bot</p>
+                    <strong data-i18n="faq.q1">Q: Bagaimana cara menambahkan bot ke grup?</strong>
+                    <p data-i18n="faq.a1">A: Silakan Kamu Chat Owner Untuk Sewa bot</p>
                 </div>
-
                 <div class="faq-item">
-                    <strong>Q: Apakah bot ini gratis?</strong>
-                    <p>A: Ya, bot ini gratis untuk digunakan dalam grup dengan fitur dasar. Fitur premium mungkin memerlukan biaya.</p>
+                    <strong data-i18n="faq.q2">Q: Apakah bot ini gratis?</strong>
+                    <p data-i18n="faq.a2">A: Ya, bot ini gratis untuk digunakan dalam grup dengan fitur dasar. Fitur premium mungkin memerlukan biaya.</p>
                 </div>
-
                 <div class="faq-item">
-                    <strong>Q: Apakah bot bisa menghapus atau mengkick orang yang share link?</strong>
-                    <p>A: Ya, dengan mengaktifkan fitur <code>.on antilink kick</code>, bot akan otomatis mengeluarkan member yang mengirim link.</p>
+                    <strong data-i18n="faq.q3">Q: Apakah bot bisa menghapus atau mengkick orang yang share link?</strong>
+                    <p><span data-i18n="faq.a3">A: Ya, dengan mengaktifkan fitur</span> <code>.on antilink kick</code>, <span data-i18n="faq.a3_cont">bot akan otomatis mengeluarkan member yang mengirim link.</span></p>
                 </div>
             </div>
         </section>
-
-        <section id="kontak">
-            <h2>Kontak</h2>
-            <div class="command-list">
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> Email: branpediaid@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> WhatsApp: +62 857-9560-0265 </p>
-                    <p><i class="fas fa-map-marker-alt"></i> Lokasi: Jakarta, Indonesia</p>
+        <!-- Contact -->
+        <section id="contact">
+            <h2 data-i18n="contact.title">Kontak</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3 data-i18n="contact.email">Email</h3>
+                        <p>shiyabot@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3 data-i18n="contact.whatsapp">WhatsApp</h3>
+                        <p>+62 812-3456-7890</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3 data-i18n="contact.location">Lokasi</h3>
+                        <p data-i18n="contact.location_detail">Jakarta, Indonesia</p>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span data-i18n="footer.copyright">2025 Shiya MD Bot. Semua hak dilindungi.</span></p>
+    </footer>
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-btn" id="themeBtn">
+            <i class="fas fa-moon"></i>
+        </button>
+        <div class="theme-dropdown" id="themeDropdown">
+            <div class="theme-option" data-theme="light"><i class="fas fa-sun"></i> Light Mode</div>
+            <div class="theme-option" data-theme="dark"><i class="fas fa-moon"></i> Dark Mode</div>
+        </div>
+    </div>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="language-btn" id="languageBtn">
+            <i class="fas fa-globe"></i>
+        </button>
+        <div class="language-dropdown" id="languageDropdown">
+            <div class="language-option" data-lang="id"><i class="fas fa-language"></i> Bahasa Indonesia</div>
+            <div class="language-option" data-lang="en"><i class="fas fa-language"></i> English</div>
+            <div class="language-option" data-lang="es"><i class="fas fa-language"></i> Español</div>
+            <div class="language-option" data-lang="ar"><i class="fas fa-language"></i> العربية</div>
+        </div>
+    </div>
 </body>
-                  </html>
+</html>
