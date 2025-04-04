@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiya MD Bot - Multi-language WhatsApp Bot</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -19,11 +22,13 @@
             <li><a href="#contact" data-i18n="nav.contact">Kontak</a></li>
         </ul>
     </nav>
+
     <!-- Hero Section -->
     <div class="hero">
         <h1 data-i18n="hero.title">Selamat datang di Shiya MD Bot!</h1>
         <p data-i18n="hero.subtitle">Bot cerdas untuk mengelola grup dengan mudah dan efisien.</p>
     </div>
+
     <div class="container">
         <!-- Features -->
         <section id="features">
@@ -51,6 +56,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Usage -->
         <section id="usage">
             <h2 data-i18n="usage.title">Cara Penggunaan</h2>
@@ -60,6 +66,7 @@
                 <p><span data-i18n="usage.step3">3. Gunakan perintah seperti</span> <code>.menu</code> <span data-i18n="usage.step3_cont">untuk melihat daftar fitur.</span></p>
             </div>
         </section>
+
         <!-- Commands -->
         <section id="commands">
             <h2 data-i18n="commands.title">Daftar Perintah</h2>
@@ -77,6 +84,7 @@
                     <div class="command">.antilink [mode]</div>
                     <p><span data-i18n="commands.antilink_mode_desc">Mode bisa berupa</span> <code>delete</code> <span data-i18n="commands.antilink_mode_desc1">(hanya hapus pesan) atau</span> <code>kick</code> <span data-i18n="commands.antilink_mode_desc2">(hapus dan keluarkan member). Contoh:</span> <code>.antilink kick</code></p>
                 </div>
+
                 <h3 data-i18n="commands.antitoxic">Fitur Anti-Toksik</h3>
                 <div class="command-item">
                     <div class="command">.on antibadword</div>
@@ -86,11 +94,13 @@
                     <div class="command">.addbadword [kata]</div>
                     <p><span data-i18n="commands.addbadword_desc">Tambahkan kata ke daftar kata terlarang. Contoh:</span> <code>.addbadword anjing</code></p>
                 </div>
+
                 <h3 data-i18n="commands.downloader">Fitur Downloader</h3>
                 <div class="command-item">
                     <div class="command">.ytdl [url]</div>
                     <p><span data-i18n="commands.ytdl_desc">Download video dari YouTube. Contoh:</span> <code>.ytdl https://youtube.com/xxxx</code></p>
                 </div>
+
                 <h3 data-i18n="commands.store">Fitur Store</h3>
                 <div class="command-item">
                     <div class="command">.liststore</div>
@@ -98,6 +108,7 @@
                 </div>
             </div>
         </section>
+
         <!-- FAQ -->
         <section id="faq">
             <h2 data-i18n="faq.title">FAQ</h2>
@@ -106,16 +117,19 @@
                     <strong data-i18n="faq.q1">Q: Bagaimana cara menambahkan bot ke grup?</strong>
                     <p data-i18n="faq.a1">A: Silakan Kamu Chat Owner Untuk Sewa bot</p>
                 </div>
+
                 <div class="faq-item">
                     <strong data-i18n="faq.q2">Q: Apakah bot ini gratis?</strong>
                     <p data-i18n="faq.a2">A: Ya, bot ini gratis untuk digunakan dalam grup dengan fitur dasar. Fitur premium mungkin memerlukan biaya.</p>
                 </div>
+
                 <div class="faq-item">
                     <strong data-i18n="faq.q3">Q: Apakah bot bisa menghapus atau mengkick orang yang share link?</strong>
                     <p><span data-i18n="faq.a3">A: Ya, dengan mengaktifkan fitur</span> <code>.on antilink kick</code>, <span data-i18n="faq.a3_cont">bot akan otomatis mengeluarkan member yang mengirim link.</span></p>
                 </div>
             </div>
         </section>
+
         <!-- Contact -->
         <section id="contact">
             <h2 data-i18n="contact.title">Kontak</h2>
@@ -150,10 +164,12 @@
             </div>
         </section>
     </div>
+
     <!-- Footer -->
     <footer>
         <p>&copy; <span data-i18n="footer.copyright">2025 Shiya MD Bot. Semua hak dilindungi.</span></p>
     </footer>
+
     <!-- Theme Switcher -->
     <div class="theme-switcher">
         <button class="theme-btn" id="themeBtn">
@@ -164,6 +180,7 @@
             <div class="theme-option" data-theme="dark"><i class="fas fa-moon"></i> Dark Mode</div>
         </div>
     </div>
+
     <!-- Language Selector -->
     <div class="language-selector">
         <button class="language-btn" id="languageBtn">
@@ -176,5 +193,7 @@
             <div class="language-option" data-lang="ar"><i class="fas fa-language"></i> العربية</div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
